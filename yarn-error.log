@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\PROGRA~1\cmder\bin;C:\PROGRA~1\cmder\vendor\bin;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Users\Ace\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\adb;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\Ace\AppData\Local\Microsoft\WindowsApps;C:\Users\Ace\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Ace\AppData\Roaming\npm;C:\Program Files\Bandizip\;C:\Program Files\JetBrains\WebStorm 2020.1.2\bin;C:\Users\Ace\AppData\Local\Yarn\bin;C:\Users\Ace\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\PROGRA~1\cmder;C:\PROGRA~1\cmder\vendor\git-for-windows\cmd;C:\PROGRA~1\cmder\vendor\git-for-windows\mingw64\bin;C:\PROGRA~1\cmder\vendor\git-for-windows\usr\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.4.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\code\web\blog\package.json: Unexpected token } in JSON at position 579
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "blog",
+    "version": "0.0.1",
+    "description": "ahao&#39;s blog",
+    "main": "index.js",
+    "authors": {
+      "name": "ahaoboy",
+      "email": "504595380@qq.com"
+    },
+    "repository": "https://github.com/ahaoboy/blog.git/blog",
+    "scripts": {
+      "dev": "vuepress dev --temp .temp",
+      "build": "vuepress build --temp .temp "
+    },
+    "license": "MIT",
+    "devDependencies": {
+      "@vuepress/plugin-back-to-top": "^1.5.2",
+      "@vuepress/theme-blog": "^2.2.0",
+      "vuepress": "^1.5.2",
+      "vuepress-plugin-right-anchor": "^0.1.4",
+      "@vuepress/plugin-blog": "^1.9.2",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
