@@ -12,3 +12,4 @@ config.local.js
 basement_dist
 .idea
 .temp
+.yarn-error.log

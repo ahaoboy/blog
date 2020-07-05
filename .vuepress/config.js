@@ -3,7 +3,33 @@ module.exports = {
   description: "This is a blog built by VuePress",
   theme: "@vuepress/theme-blog", // OR shortcut: @vuepress/blog
   markdown: { lineNumbers: true },
-  dirname: "posts",
+  plugins: [
+    "./.vuepress/plugins/blogLink.js", // 自定义插件
+    "social-share", // 分享
+    "@vuepress/back-to-top", // 回到顶部
+    "@vuepress/last-updated", // 最新更新时间
+    [
+      "vuepress-plugin-reading-time",
+      {
+        excludes: ["/about", "/tag/.*"],
+      },
+    ],
+    "demo-code",
+    // "@vuepress/medium-zoom",
+    ["vuepress-plugin-zooming", { selector: "img" }], // 图片放大
+    // [
+    //   "vuepress-plugin-code-copy",
+    //   {
+    //     selector: `div[class*="language-j"]`,
+    //     // align: String,
+    //     // color: String,
+    //     // backgroundTransition: Boolean,
+    //     // backgroundColor: String,
+    //     // successText: String
+    //   },
+    // ],
+  ],
+  // dirname: "posts",
   themeConfig: {
     lastUpdated: "Last Updated", // string | boolean
     // 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接
